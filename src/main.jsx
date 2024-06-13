@@ -3,7 +3,8 @@ import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Face from "./Gezicht.jsx";
+import Gezicht from "./Gezicht.jsx";
+import Stickers from "./Stickers.jsx";
 
 const router = createBrowserRouter([
   {
@@ -12,7 +13,11 @@ const router = createBrowserRouter([
   },
   {
     path: "/gezicht",
-    element: <Face />,
+    element: <Gezicht />,
+  },
+  {
+    path: "/stickers",
+    element: <Stickers />,
   },
 ]);
 
