@@ -1,0 +1,8 @@
+.container video {
+    width: 95vw;
+}
+
+.controls {
+    display: flex;
+    gap: 10px;
+}

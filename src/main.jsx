@@ -5,6 +5,7 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Gezicht from "./Gezicht.jsx";
 import Stickers from "./Stickers.jsx";
+import Video from "./Video.jsx";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
   {
     path: "/stickers",
     element: <Stickers />,
+  },
+  {
+    path: "/video",
+    element: <Video />,
   },
 ]);
 
