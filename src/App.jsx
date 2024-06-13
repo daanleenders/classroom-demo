@@ -1,14 +1,23 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
-
+  function gezicht() {
+    window.location.href = "/gezicht";
+  }
+  function stickers() {
+    window.location.href = "/stickers";
+  }
+  function video() {
+    window.location.href = "/video";
+  }
   return (
     <>
-      <h1>Hallo</h1>
+      <div>
+        <h1>Hallo</h1>
+        <button onClick={gezicht}>Gezicht</button>
+        <button onClick={stickers}>Stickers</button>
+        <button onClick={video}>Video</button>
+      </div>
     </>
   );
 }

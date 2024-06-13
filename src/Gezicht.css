@@ -5,6 +5,15 @@ body {
     transform: translate(-50%,-50%);
 }
 
+.gezichtContainer {
+    width: 100vw;
+    height: 100vh;
+    background-color: lightsalmon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .gezicht {
     position: relative;

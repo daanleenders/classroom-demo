@@ -8,7 +8,7 @@ function Video() {
     videoRef.current.play();
   }
   return (
-    <div className="container">
+    <div className="videoContainer">
       <video src={videoSource} ref={videoRef} />
       <div className="controls">
         <button onClick={handleStart}>Start</button>

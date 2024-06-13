@@ -1,8 +1,25 @@
-.container video {
+.videoContainer {
+    width: 100vw;
+    height: 100vh;
+    background-color: lightgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.videoContainer video {
     width: 95vw;
 }
 
-.controls {
+.videoContainer .controls {
     display: flex;
+    flex-direction: row;
+    align-items: start;
     gap: 10px;
+}
+
+.videoContainer button {
+    background-color: gold;
 }
