@@ -1,0 +1,84 @@
+body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+.gezicht {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
+    background-color: greenyellow;
+
+    /* background-color: gold; */
+
+    /* background-color: bisque; !* lichte huidskleur *! */
+
+    /* background-color: #b06c49; !* donkere huidskleur *! */
+}
+
+.mond {
+    box-sizing: border-box;
+    position: absolute;
+    top: 220px;
+    left: 90px;
+    width: 200px;
+    height: 100px; /* as the half of the width */
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border: 10px solid;
+    border-bottom: 0;
+    border-color: black;
+
+    /* rotate: 180deg; */
+}
+
+.traan {
+    position: absolute;
+    top: 150px;
+    left: 290px;
+    width: 20px;
+    height: 20px;
+    border-radius: 80% 0 55% 50% / 55% 0 80% 50%;
+    border: 3px solid blue;
+    background-color: blue;
+    transform: rotate(-45deg);
+    margin-top: 20px;
+}
+
+.ogen {
+    width: 210px;
+    height: 100px;
+    position: absolute;
+    left: 90px;
+    top: 80px;
+}
+
+.oog {
+    background-color: saddlebrown;
+    width: 52px;
+    height: 60px;
+    border-radius: 50px;
+    position: absolute;
+    top: 25px;
+}
+
+.oog.rechts {
+    right: 0;
+}
+
+.oog::before {
+    content: "";
+    display: block;
+    background-color: black;
+    width: 23px;
+    height: 23px;
+    border-radius: 100px;
+    position: absolute;
+    top: 20px;
+    left: 14px
+}
+
